@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BddProject</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <%= link_to 'Produtos', root_path %>
+        <%= link_to 'Finalizar Compra', checkout_path, id: 'checkout-link' %>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>

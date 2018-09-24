@@ -1,0 +1,5 @@
+<h1> Produto: <%= @product.name %></h1>
+
+<span><%= @product.price %></span>
+
+<%= link_to 'Comprar', buy_product_path(@product), id: 'buy-now' %>
